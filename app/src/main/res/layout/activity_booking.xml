@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".activities.BookingActivity">
+
+
+
+    <!-- Air Booking Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAirBooking"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardTrainBooking">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/plane"
+            android:contentDescription="Airplane Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Booking"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorPrimaryText"
+                android:fontFamily="@font/sf_bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Train Booking Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTrainBooking"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardAirBooking"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/rail"
+            android:contentDescription="Train Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train Booking"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorPrimaryText"
+                android:fontFamily="@font/sf_bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bus Booking Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBusBooking"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/cardAirBooking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardHotelBooking">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/bus"
+            android:contentDescription="Bus Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Booking"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorPrimaryText"
+                android:fontFamily="@font/sf_bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Hotel Booking Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHotelBooking"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/cardTrainBooking"
+        app:layout_constraintStart_toEndOf="@id/cardBusBooking"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/hotel"
+            android:contentDescription="Hotel Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Booking"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorPrimaryText"
+                android:fontFamily="@font/sf_bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

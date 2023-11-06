@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057667745337",
+    "project_id": "trvavelguidassistant",
+    "storage_bucket": "trvavelguidassistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057667745337:android:54fe90573da68435422fe8",
+        "android_client_info": {
+          "package_name": "com.example.trvavelguidassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057667745337-ulvh8ok0qc4rgk5vf65gr1q7m58om381.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBMW9Wya4YZD2wKPIe2taDfyvm0tg9PPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057667745337-ulvh8ok0qc4rgk5vf65gr1q7m58om381.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
